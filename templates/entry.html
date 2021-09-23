@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>{{ the_title }}</h2>
+
+<form method="POST" action="search_vowels">
+    <table>
+        <p>Здесь что-то вводим:</p>
+        <tr><td>Фраза:</td><td><input name="phrase" type="text" width="60"></td></tr>
+        <tr><td>Буквы:</td><td><input name="letters" type="text" value="aoiue"></td></tr>
+    </table>
+<p>Если вы ввели фразу, нажмите кнопку</p>
+    <p><input value ='Do it!' type='SUBMIT'></p>
+
+</form>
+{% endblock %}
