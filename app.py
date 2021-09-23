@@ -13,7 +13,7 @@ app.config['dbconfig'] = {'host': 'localhost',
 
 
 
-def log_request(req:'flask_rquest', res: str) -> None:
+def log_request(req:'flask_request', res: str) -> None:
     """Журналирует веб-запрос и возвращает результат"""
 
     with UseDatabase(app.config['dbconfig']) as cursor:
